@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карликовые планеты</title>
+     <link rel="icon" href="https://i.postimg.cc/DwNXKrqb/IMG-3637-(1)-(1).jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="info-page">
+        <div class="content-wrapper">
+            <h1>Мир карликовых планет</h1>
+            <p>Карликовая планета — это небесное тело, которое обращается вокруг Солнца, имеет достаточную массу для поддержания круглой формы, но не смогло расчистить свою орбиту от других объектов.</p>
+            
+            <div class="info-block">
+                <h3>Забытый статус Плутона</h3>
+                <p>Долгое время мы знали только об одной планете за Нептуном — Плутоне, открытом Клайдом Томбо в 1930 году. Но в начале 2000-х годов астрономы начали находить другие крупные объекты в поясе Койпера. В 2005 году команда Майка Брауна открыла Эриду, которая оказалась даже массивнее Плутона. Это открытие поставило вопрос: считать ли все новые объекты планетами или пересмотреть само определение?</p>
+            </div>
+
+            <div class="info-block">
+                <h3>Решение 2006 года</h3>
+                <p>В 2006 году Международный астрономический союз (МАС) принял историческое решение. Плутон был "разжалован", и был создан новый класс небесных тел — карликовые планеты. Плутон, Эрида, Макемаке и Хаумеа стали первыми её представителями. В список также включили Цереру, которая находится гораздо ближе — в поясе астероидов.</p>
+            </div>
+
+            <div class="info-block">
+                <h3>Где они скрываются?</h3>
+                <p>За исключением Цереры, все известные карликовые планеты находятся в поясе Койпера — ледяном кольце за орбитой Нептуна. Это самые дальние, холодные и наименее изученные миры нашей Солнечной системы. Изучение этих объектов помогает нам понять, как формировалась Солнечная система миллиарды лет назад.</p>
+            </div>
+
+            <div class="info-block authors-block">
+                <span class="authors-label">Авторы проекта</span>
+                <p class="authors-names">Цьоба Ярослав, Евгений Гурский</p>
+            </div>
+
+            <button id="go-to-space">Перейти к интерактивной карте</button>
+        </div>
+    </section>
+
+    <div id="space-container" class="hidden">
+        
+        <div class="planet-fixed" id="earth">
+            <img src="img/earth.png" alt="Земля">
+        </div>
+
+        <div class="planet" id="ceres" data-title="Церера" data-info="<strong>Ближайшая к Солнцу карликовая планета, расположенная в главном поясе астероидов. Единственное подобное тело во внутренней Солнечной системе.</strong><ul><li><strong>Диаметр:</strong> ~0.07 Земли</li><li><strong>Масса:</strong> ~0.00015 Земли</li><li><strong>Орбита:</strong> Между Марсом и Юпитером</li><li><strong>Факт:</strong> Составляет около 25–35% массы всего пояса астероидов.</li></ul>">
+            <img src="img/ceres.png" alt="Церера">
+            <span class="planet-label">Церера</span>
+        </div>
+
+        <div class="planet" id="orcus" data-title="Орк" data-info="<strong>Крупный объект пояса Койпера, который часто называют «анти-Плутоном». Имеет довольно крупный спутник — Вант.</strong><ul><li><strong>Диаметр:</strong> ~0.065 Земли</li><li><strong>Масса:</strong> ~0.0001 Земли</li><li><strong>Орбита:</strong> Резонанс с Нептуном (2:3)</li><li><strong>Факт:</strong> Его положение на орбите обычно противоположно положению Плутона.</li></ul>">
+            <img src="img/orcus.png" alt="Орк">
+            <span class="planet-label">Орк</span>
+        </div>
+
+        <div class="planet" id="pluto" data-title="Плутон" data-info="<strong>Известнейшая карликовая планета. Имеет сложную систему из пяти спутников и разреженную атмосферу.</strong><ul><li><strong>Диаметр:</strong> ~0.18 Земли</li><li><strong>Масса:</strong> ~0.0022 Земли</li><li><strong>Орбита:</strong> Пояс Койпера</li><li><strong>Факт:</strong> На поверхности расположена ледяная равнина Спутник в области Томбо (ледяное «сердце»).</li></ul>">
+            <img src="img/pluto.png" alt="Плутон">
+            <span class="planet-label">Плутон</span>
+        </div>
+
+        <div class="planet" id="haumea" data-title="Хаумеа" data-info="<strong>Вытянутая карликовая планета, напоминающая мяч для регби. Совершает полный оборот вокруг оси менее чем за 4 часа.</strong><ul><li><strong>Диаметр:</strong> ~0.13 Земли (по длинной оси)</li><li><strong>Масса:</strong> ~0.0007 Земли</li><li><strong>Орбита:</strong> Далекий пояс Койпера</li><li><strong>Факт:</strong> Одна из немногих карликовых планет, у которых обнаружены кольца.</li></ul>">
+            <img src="img/haumea.png" alt="Хаумеа">
+            <span class="planet-label">Хаумеа</span>
+        </div>
+
+        <div class="planet" id="makemake" data-title="Макемаке" data-info="<strong>Одна из крупнейших карликовых планет. Получила название в честь бога человечества из мифологии острова Пасхи.</strong><ul><li><strong>Диаметр:</strong> ~0.11 Земли</li><li><strong>Масса:</strong> ~0.0005 Земли</li><li><strong>Орбита:</strong> Внешний пояс Койпера</li><li><strong>Факт:</strong> Имеет очень разреженную временную атмосферу, которая может замерзать при удалении от Солнца.</li></ul>">
+            <img src="img/makemake.png" alt="Макемаке">
+            <span class="planet-label">Макемаке</span>
+        </div>
+
+        <div class="planet" id="eris" data-title="Эрида" data-info="<strong>Самая массивная подтвержденная карликовая планета. Её открытие привело к созданию самого термина 'карликовая планета'.</strong><ul><li><strong>Диаметр:</strong> ~0.18 Земли</li><li><strong>Масса:</strong> ~0.0028 Земли</li><li><strong>Орбита:</strong> Рассеянный диск</li><li><strong>Факт:</strong> Одна из самых удалённых известных карликовых планет Солнечной системы.</li></ul>">
+            <img src="img/eris.png" alt="Эрида">
+            <span class="planet-label">Эрида</span>
+        </div>
+
+        <div class="planet" id="quaoar" data-title="Квавар" data-info="<strong>Плотный ледяной объект за орбитой Нептуна. Имеет спутник Вейвот и необычную систему колец.</strong><ul><li><strong>Диаметр:</strong> ~0.09 Земли</li><li><strong>Масса:</strong> ~0.0002 Земли</li><li><strong>Орбита:</strong> Пояс Койпера</li><li><strong>Факт:</strong> Его кольцо находится значительно дальше предела Роша, что противоречит классическим теориям.</li></ul>">
+            <img src="img/quaoar.png" alt="Квавар">
+            <span class="planet-label">Квавар</span>
+        </div>
+
+        <div class="planet" id="gonggong" data-title="Гунгун" data-info="<strong>Объект, названный в честь китайского бога воды. Поверхность покрыта водяным льдом с возможными следами метана.</strong><ul><li><strong>Диаметр:</strong> ~0.1 Земли</li><li><strong>Масса:</strong> ~0.0003 Земли</li><li><strong>Орбита:</strong> Сильно вытянутая (Пояс Койпера)</li><li><strong>Факт:</strong> Имеет очень красный оттенок из-за органических соединений (толинов) на поверхности.</li></ul>">
+            <img src="img/gonggong.png" alt="Гунгун">
+            <span class="planet-label">Гунгун</span>
+        </div>
+    </div>
+
+    <div id="info-modal">
+        <h2 id="modal-title"></h2>
+        <div id="modal-desc"></div> <button id="close-btn">Вернуться к обзору</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
